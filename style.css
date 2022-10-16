@@ -14,7 +14,11 @@
     scroll-behavior: smooth;
   }
   
-
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
   .section-heading {
     font-size: 5rem;
@@ -38,15 +42,13 @@
       url(images/image1.jpg) center no-repeat;
     background-size: cover;
     flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     
   }
   
   .section-1-heading {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 500;
     color: #fff;
     background-color: #e41c6f;
     padding: 0 3rem;
@@ -89,3 +91,19 @@
     text-transform: uppercase;
     letter-spacing: 0.3rem;
   }
+
+  /* Nav bar */
+.navbar{
+    width: 100%;
+    height: 4rem;
+    background-color: #e41c6f;
+    box-shadow: 0.2rem 0.2rem 0.2rem 5 rem #555;
+}
+.navbar-link{
+font-size: 1.4rem;
+font-weight: 400;
+color: #333;
+margin: 0.8rem;
+letter-spacing: 0.1rem;
+text-transform: uppercase;
+}
