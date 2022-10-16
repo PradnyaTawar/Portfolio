@@ -7,20 +7,20 @@
     list-style-type: none;
     font-family: "Jost", sans-serif;
     font-weight: 400;
-  }
-  
-  html {
+}
+
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-  }
-  
-.center{
+}
+
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-  
-  .section-heading {
+
+.section-heading {
     font-size: 5rem;
     color: #333;
     text-transform: uppercase;
@@ -28,25 +28,22 @@
     margin-bottom: 15rem;
     border-bottom: 0.3rem solid #333;
     text-shadow: 0.2rem 0.2rem 0.5rem #555;
-  }
-  /* End of Reset and Common Styles */
-  
-  /* Section 1 */
-  .section-1 {
+}
+
+
+/* Section 1 */
+.section-1 {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.3)
-      ),
-      url(images/image1.jpg) center no-repeat;
+    background: 
+        url(images/image1.jpg) center no-repeat;
     background-size: cover;
     flex-direction: column;
-    
-    
-  }
-  
-  .section-1-heading {
+
+
+}
+
+.section-1-heading {
     font-size: 3rem;
     font-weight: 500;
     color: #fff;
@@ -58,9 +55,9 @@
     border-bottom: 0.3rem solid #fff;
     text-shadow: 0.2rem 0.2rem 1rem #555;
     transform: skew(-10deg);
-  }
-  
-  .person-img {
+}
+
+.person-img {
     width: 25rem;
     height: 25rem;
     object-fit: cover;
@@ -69,9 +66,9 @@
     background-color: rgba(255, 255, 255, 0.7);
     padding: 0.5rem;
     opacity: 0.9;
-  }
-  
-  .person-name {
+}
+
+.person-name {
     font-size: 2rem;
     color: #fff;
     background-color: #e41c6f;
@@ -79,9 +76,9 @@
     padding: 0.5rem 3rem;
     letter-spacing: 0.3rem;
     transform: skew(-10deg);
-  }
-  
-  .section-1-btn {
+}
+
+.section-1-btn {
     font-size: 1.7rem;
     font-weight: 700;
     color: #333;
@@ -90,20 +87,55 @@
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-  }
+}
 
-  /* Nav bar */
-.navbar{
+/* Nav bar */
+.navbar {
     width: 100%;
-    height: 4rem;
+    height: 5rem;
+    margin: 0;
     background-color: #e41c6f;
     box-shadow: 0.2rem 0.2rem 0.2rem 5 rem #555;
 }
-.navbar-link{
-font-size: 1.4rem;
-font-weight: 400;
-color: #333;
-margin: 0.8rem;
-letter-spacing: 0.1rem;
-text-transform: uppercase;
+
+.navbar-link {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+    margin: 1.5rem ;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.2s;
 }
+
+.navbar-link:hover {
+    color: #fff;
+}
+.navbar-link::before{
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    right: -15%;
+    bottom: -0.3rem;
+    transition: width 0.2s;
+}
+
+.navbar-link:hover::before{
+width: 130%;
+}
+
+/* section 2*/
+.section-2 {
+    width: 100%;
+    height: 100%;
+    padding: 15rem 0 10rem 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.3)),
+        url(images/image2.jpg) center no-repeat;
+    background-size: cover;
+ 
+}
+
