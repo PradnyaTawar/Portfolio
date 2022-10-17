@@ -97,11 +97,11 @@ html {
   margin: 0;
   background-color: #e41c6f;
   box-shadow: 0.2rem 0.2rem 0.2rem 5 rem #555;
-position: absolute;
-z-index: 300;
+  position: absolute;
+  z-index: 300;
 }
 
-.sticky{
+.sticky {
   position: fixed;
   top: 0;
 }
@@ -133,13 +133,14 @@ z-index: 300;
   transition: width 0.2s;
 }
 
-.change.navbar-link{
+.change.navbar-link {
   color: #fff;
 }
-.change.navbar-link::before{
+
+.change.navbar-link::before {
   width: 130%;
-  }
-  
+}
+
 .navbar-link:hover::before {
   width: 130%;
 }
@@ -348,19 +349,20 @@ z-index: 300;
   color: #fff;
   text-transform: uppercase;
 
-  margin: 5rem ;
+  margin: 5rem;
   border-bottom: 0.3rem solid #fff;
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
-.contact-form{
+.contact-form {
   width: 50rem;
- 
+
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -385,6 +387,7 @@ z-index: 300;
   letter-spacing: 1rem;
   cursor: pointer;
 }
+
 /*section 5*/
 .section-5 {
   width: 100%;
@@ -509,4 +512,5 @@ z-index: 300;
     width: 40rem;
   }
 }
+
 /* End of Responsive */
