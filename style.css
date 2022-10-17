@@ -356,7 +356,6 @@ html {
 
 .contact-form {
   width: 50rem;
-
   flex-direction: column;
   display: flex;
   align-items: center;
