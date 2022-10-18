@@ -15,6 +15,7 @@ const mainFn = () => {
     } else {
         navbar.classList.remove("sticky");
     }
+    
 
     sections.forEach((section, i) => {
         if (window.pageYOffset >= section.offsetTop - 10) {
@@ -39,3 +40,6 @@ mainFn();
 window.addEventListener("resize", () => {
     window.location.reload();
 });
+
+
+

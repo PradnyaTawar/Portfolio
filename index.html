@@ -163,7 +163,7 @@
                     <a href="https://pradnyatawar.github.io/PaymentGateway/" class="project-link" target="_blank">Go to
                         project</a>
                 </div>
-               
+
             </div>
         </section>
         <!--End of Section-3-->
@@ -172,13 +172,31 @@
             <h1 class="section-4-heading" id="section-4">
                 contact me
             </h1>
-            <form class="contact-form">
-                <input type="text" class="text" placeholder="Name">
-                <input type="text" class="enail" placeholder="Email">
-                <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" class=""></textarea>
+            <form onsubmit="sendEmail(); reset(); return false;" class="contact-form">
+                <input type="text" id="name" class="text" placeholder="Name">
+                <input type="email" id="email" class="email" placeholder="Email">
+                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message from you..!"
+                    class=""></textarea>
                 <input type="submit" class="contact-form-btn" value="submit">
             </form>
         </section>
+        <script src="https://smtpjs.com/v3/smtp.js">
+            </script>
+            <script>
+            function sendEmail() {
+                Email.send({
+                    SecureToken: '50cea2db-4108-46e9-b4f2-008f1c502464',
+                    To: 'tawar.rani96@gmail.com',
+                    From: document.getElementById('email').value,
+                    Subject: "New contact form inquery",
+                    Body: "Name:" + document.getElementById('name').value
+                        + "<br> Email:" + document.getElementById('email').value
+                        + "<br> Message:" + document.getElementById('message').value
+                }).then(
+                    message => alert("Message sent successfully")
+                );
+            }
+            </script>
         <!--End of Section-4-->
         <!--section-5-->
         <footer class="section-5">
@@ -200,6 +218,7 @@
         </footer>
         <!--End section-->
     </div>
+   
     <script src="script.js"></script>
 </body>
 
