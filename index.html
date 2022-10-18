@@ -173,8 +173,8 @@
                 contact me
             </h1>
             <form onsubmit="sendEmail(); reset(); return false;" class="contact-form">
-                <input type="text" id="name" class="text" placeholder="Name">
-                <input type="email" id="email" class="email" placeholder="Email">
+                <input type="text" name="name" id="name" class="text" placeholder="Name">
+                <input type="email" name="email" id="email" class="email" placeholder="Email">
                 <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message from you..!"
                     class=""></textarea>
                 <input type="submit" class="contact-form-btn" value="submit">
@@ -189,9 +189,9 @@
                     To: 'tawar.rani96@gmail.com',
                     From: document.getElementById("email").value,
                     Subject: "New contact form inquery",
-                    Body: "Name:" + document.getElementById('name').value
-                        + "<br> Email:" + document.getElementById('email').value
-                        + "<br> Message:" + document.getElementById('message').value
+                    Body: "Name:<br>" + document.getElementById('name').value
+                        + "<br> Email:<br>" + document.getElementById('email').value
+                        + "<br> Message:<br>" + document.getElementById('message').value
                 }).then(
                     message => alert("Message sent successfully")
                 );
