@@ -172,12 +172,12 @@
             <h1 class="section-4-heading" >
                 contact me
             </h1>
-            <form style="z-index: 1000 !important"  class="contact-form">
+            <form onsubmit="sendEmail(); reset(); return false;"  style="z-index: 1000 !important"  class="contact-form">
                 <input type="text" name="name" id="name" class="text" placeholder="Name">
                 <input type="email" name="email" id="email" class="email" placeholder="Email">
                 <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message from you..!"
                     class=""></textarea>
-                <input onsubmit="sendEmail(); reset(); return false;" type="submit" class="contact-form-btn" >
+                <input type="submit" class="contact-form-btn" >
             </form>
         </section>
         <script src="https://smtpjs.com/v3/smtp.js">

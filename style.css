@@ -182,14 +182,14 @@ html {
 .progress-text {
   position: absolute;
   left: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #fff;
 }
 
 .progress-text span {
   margin: 0 0.5rem;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .progress-present {
@@ -390,7 +390,7 @@ html {
 /*section 5*/
 .section-5 {
   width: 100%;
-  height: 40vh;
+  height: 20vh;
   background-color: #222;
   display: flex;
   align-items: center;
@@ -399,11 +399,11 @@ html {
 }
 
 .social-media {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .social-media-link {
-  margin: 0 2rem;
+  margin: 0 1rem;
   padding: 0.7rem;
   background-color: #e41c6f;
   border-radius: 0.5rem;
@@ -417,7 +417,7 @@ html {
 
 .copyright {
   color: #aaa;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   font-weight: 300;
   text-align: center;
