@@ -1,2 +1,2 @@
 # Portfolio
-# https://pradnyatawar.github.io/Portfolio/
+# https://pradnyatawar2022portfolio.netlify.app/
